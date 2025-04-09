@@ -10,7 +10,7 @@ gpotion add_vectors(result, a, b, n) do
 end
 end
 
-n = 1280000
+n = 7680000
 
 
 
@@ -43,7 +43,7 @@ next = System.monotonic_time()
 IO.puts "time gpu #{System.convert_time_unit(next-prev,:native,:millisecond)}"
 
 result = GPotion.get_gmatrex(ref3)
-#IO.inspect result
+# IO.inspect result
 
 
 prev = System.monotonic_time()
