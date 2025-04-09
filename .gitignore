@@ -9,6 +9,7 @@ erl_crash.dump
 /config/*.secret.exs
 .elixir_ls/
 
-# Extensions and other stuff
 .elixir-tools/
 priv/*
+c_src/Elixir.*
+c_src/*.hip
