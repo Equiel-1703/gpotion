@@ -10,7 +10,7 @@ gpotion add_vectors(result, a, b, n) do
 end
 end
 
-n = 10000000
+n = 1280000
 
 
 
@@ -24,6 +24,10 @@ kernel=GPotion.load(&MyKernel.add_vectors/5)
 
 threadsPerBlock = 128;
 numberOfBlocks = div(n + threadsPerBlock - 1, threadsPerBlock)
+
+IO.puts "number of blocks: #{numberOfBlocks}"
+IO.puts "threads per block: #{threadsPerBlock}"
+IO.puts "size of vector: #{n}"
 
 
 prev = System.monotonic_time()
